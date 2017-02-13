@@ -139,7 +139,7 @@ const decodeURIUniversal = (str) => {
  */
 const boolString = (vl) => vl === 'true';
 
-export {
+export default {
 	base64,
 	salt,
 	hash,

@@ -33,7 +33,9 @@ const isObj = (obj) => Object.prototype.toString.call(obj) === '[object Object]'
 const each = (obj, fn, fnSort) => {
 
 	if (isObj(obj)) {
-		fn = typeof fn !== 'function' ? function () {
+		fn = typeof fn !== 'function' ?
+
+ function () {
 		} : fn;
 
 		let k = keys(obj);
@@ -80,19 +82,19 @@ const arrToObjByKey = (arr, prop, fnIterProp) => {
 /**
  * Get properties from obj by keys
  * @param {object} obj
- * @param {*} keys [{keyOld : keyNew,...}]
+ * @param {*} ks [{keyOld : keyNew,...}]
  * @returns {{}}
  */
-const keysChange = (obj, keys) => {
+const keysChange = (obj, ks) => {
 	let r = {},
 		arKey,
 		isNewkey = false;
 
-	if (isObj(keys)) {
-		arKey = keys(keys);
+	if (isObj(ks)) {
+		arKey = keys(ks);
 		isNewkey = true;
 	} else
-		arKey = keys;
+		arKey = ks;
 
 
 	if (obj && Array.isArray(arKey)) {
@@ -100,7 +102,7 @@ const keysChange = (obj, keys) => {
 			let k = arKey[i];
 
 			if (obj[k] || obj[k] === false)
-				r[isNewkey ? keys[k] : k] = obj[k];
+				r[isNewkey ? ks[k] : k] = obj[k];
 
 		}
 	}
@@ -289,7 +291,7 @@ const ext = (obj, add) => {
 			if (isObj(val))
 				if (!obj[k])
 					obj[k] = val;
-				else
+			else
 					j(obj[k], val);
 
 			else
@@ -369,7 +371,7 @@ const beRound = (ob, prop, round) => {
  */
 const map = (obj, iter) => keys(obj).map(prop => iter(prop, obj[prop]));
 
-export {
+export default {
 	keys,
 	beRound,
 	isEmpty,
@@ -389,4 +391,4 @@ export {
 	keysChange,
 	arrToObjByKey,
 	map
-	}
+};

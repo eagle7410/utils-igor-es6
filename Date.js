@@ -101,4 +101,4 @@ const ts = {
 	YEAR: 6622560000000
 };
 
-export { unix, time, date, dateTime, round, tsToSec, tsToMin, secToTs, minToTs, ts	};
+export default { unix, time, date, dateTime, round, tsToSec, tsToMin, secToTs, minToTs, ts	};

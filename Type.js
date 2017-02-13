@@ -41,7 +41,7 @@ const isObj = (o) => Object.prototype.toString.call(o) === '[object Object]';
  * @param {Function}fn
  * @returns {*}
  */
-const beFn = (fn) => !const isFn(fn) ? noop : fn;
+const beFn = (fn) => !isFn(fn) ? noop : fn;
 
 /**
  * Check this value is number
@@ -49,4 +49,4 @@ const beFn = (fn) => !const isFn(fn) ? noop : fn;
  */
 const isNm = (n) => typeof n === 'number';
 
-export {isNm, beFn, isObj, isFn, noop, isSet, isString}
+export default {isNm, beFn, isObj, isFn, noop, isSet, isString};
