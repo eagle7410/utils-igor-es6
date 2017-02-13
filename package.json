@@ -1,0 +1,52 @@
+{
+  "name": "utils-igor-es6",
+  "version": "1.0.0",
+  "description": "Java script utils in ecma6",
+  "homepage": "https://github.com/eagle7410/utils-igor-es6",
+  "author": {
+    "name": "Igor Stcherbina",
+    "email": "verycooleagle@gmail.com",
+    "skype": "eagleeagle7410"
+  },
+  "contributors": [
+    {
+      "name": "Igor Stcherbina",
+      "email": "verycooleagle@gmail.com",
+      "skype": "eagleeagle7410"
+    }
+  ],
+  "engines": {
+    "node": ">= 7.5.0"
+  },
+  "keywords": [
+    "utils",
+    "object",
+    "array",
+    "type",
+    "string",
+    "date",
+    "object path"
+  ],
+  "maintainers": [
+    {
+      "name": "Igor Stcherbina",
+      "email": "verycooleagle@gmail.com",
+      "skype": "eagleeagle7410"
+    }
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/eagle7410/utils-igor-es6.git"
+  },
+  "_id": "utils-igor-es6@1.0.0",
+  "devDependencies": {
+    "babel": "^6.5.2",
+    "babel-core": "^6.22.1",
+    "babel-register": "^6.22.0",
+    "grunt": "^1.0.1",
+    "grunt-jsdoc-to-markdown": "^1.2.1",
+    "grunt-mocha-test": "^0.13.2",
+    "mocha": "^3.2.0"
+  },
+  "license": "MIT",
+}
