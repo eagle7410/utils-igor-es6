@@ -35,7 +35,7 @@ console.log({
 ---
 ### Version
 1.0.0   
-[Api description](https://github.com/eagle7410/utils-igor-es6/master/Api.md)   
+[Api description](https://github.com/eagle7410/utils-igor-es6/blob/master/Api.md)   
 ---
 ### People
 
